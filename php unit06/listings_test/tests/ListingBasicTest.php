@@ -15,11 +15,19 @@
 
 
     /** @test */
-    function checkForDataId()
+    function checkForDataIdException()
     {
-        $this->expectExceptionMessage("Unable to create a listing, invalid id");
-        $data = ['id' => 0,
-                 'title' => 'asdad'];
+        $this->expectException(Exception::class);
+        $data = ['id' => ''];
+        $listing = new ListingBasic($data);
+    }
+
+    
+    /** @test */
+    function checkFortitleException()
+    {
+        $this->expectException(Exception::class);
+        $data = ['title' => ''];
         $listing = new ListingBasic($data);
     }
   }
