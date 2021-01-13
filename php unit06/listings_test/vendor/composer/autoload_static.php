@@ -7,8 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit354129c0d1cace90c4220d99da5b83ff
 {
     public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
@@ -40,8 +40,8 @@ class ComposerStaticInit354129c0d1cace90c4220d99da5b83ff
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -66,7 +66,13 @@ class ComposerStaticInit354129c0d1cace90c4220d99da5b83ff
     );
 
     public static $classMap = array (
+        'Collection' => __DIR__ . '/../..' . '/classes/Collection.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Connection' => __DIR__ . '/../..' . '/classes/Connection.php',
+        'ListingBasic' => __DIR__ . '/../..' . '/classes/ListingBasic.php',
+        'ListingFeatured' => __DIR__ . '/../..' . '/classes/ListingFeatured.php',
+        'ListingInactive' => __DIR__ . '/../..' . '/classes/ListingInactive.php',
+        'ListingPremium' => __DIR__ . '/../..' . '/classes/ListingPremium.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php',
