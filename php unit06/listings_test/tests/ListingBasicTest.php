@@ -1,5 +1,5 @@
 <?php 
-  require __DIR__ .'/../classes/ListingBasic.php';
+  // require __DIR__ .'/../classes/ListingBasic.php';
 
   use PHPUnit\Framework\TestCase;
   
@@ -80,7 +80,8 @@
                'website' => 'http://www.example123.com',
                'email' => '123@gmail.com',
                'twitter' => 'litwitter.com',
-               'status' => 'basic'];
+               'status' => 'basic',
+               'image' => null];
       $listing = new ListingBasic($data);
       $this->assertEquals($data, $listing->toArray());       
     }

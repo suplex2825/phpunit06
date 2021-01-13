@@ -2,7 +2,7 @@
 
 class ListingBasic
 {
-    private $id, $title, $website, $email, $twitter;
+    private $id, $title, $website, $email, $twitter, $image;
     protected $status = 'basic';
 
     /**
@@ -177,8 +177,25 @@ class ListingBasic
     }
 
 
-    public function setImage()
+    public function setImage($val)
     {
-        
+        $val = trim(filter_var($val, FILTER_SANITIZE_STRING));
+        if (empty($val)) {
+            $this->image = null;
+            return;
+        }
+        if (substr($val, 0, 4) != 'http') {
+            $val = BASE_URL. '/' . $val;
+        }
+        $this->image = $val;
+    }
+
+
+    public function getImage()
+    {
+      if(empty($this->image)) {
+          return false;
+      }
+        return $this->image;
     }
 }

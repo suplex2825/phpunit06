@@ -1,5 +1,5 @@
 <?php
-require __DIR__ .'/../classes/ListingPremium.php';
+// require __DIR__ .'/../classes/ListingPremium.php';
 
 use PHPUnit\Framework\TestCase;
 
